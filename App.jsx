@@ -11,7 +11,7 @@ function App(){
       .then(data=>setBook(data.docs))
    }
     return(
-        <main className="Main">
+        <main>
             <Head  onSearch={handleSearch}/>
             <Body book={book}/>
             <Footer/>

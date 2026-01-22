@@ -4,7 +4,8 @@ export default function Body({book}){
    }
     return(
       book.slice(0,5).map(item=>(
-        <section className="Book-Section">
+       <div className="Main">
+         <section className="Book-Section">
             <div className="Main-img">
                 <img src={`https://covers.openlibrary.org/b/id/${item.cover_i}-M.jpg`}alt={item.title} />
             </div>
@@ -14,6 +15,7 @@ export default function Body({book}){
                 <a href="amazone.com">To purchase</a>
             </div>
         </section>
+       </div>
       ))
     )
 }
